@@ -18,7 +18,6 @@ function mainfunct() {
     error.style.display = "block";
     error.style.color = "red";
   } else if (customtipamntinput.value >= 1) {
-    tipbutton.target.style.backgroundColor = "green";
     finaltipamount.innerHTML =
       ((customtipamntinput.value / 100) * pretotalbill.value) /
       peoplecount.value
