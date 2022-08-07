@@ -1,0 +1,317 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+/*font-family: 'Space Mono', monospace;*/
+
+.attribution {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 47px;
+  font-family: "Space Mono", monospace;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+body {
+  background-color: hsl(185, 41%, 84%);
+}
+#logo {
+  margin-left: 48%;
+  margin-top: 2%;
+}
+#parent {
+  height: 475px;
+  width: 810px;
+  border-radius: 15px;
+  background-color: hsl(0, 0%, 100%);
+  content: "";
+  margin-left: 23%;
+  margin-top: 4%;
+  padding: 28px;
+  display: flex;
+}
+#left {
+  margin-left: 25px;
+  margin-top: 190px;
+}
+#left .billinput {
+  margin-left: -7px;
+  font-family: "Space Mono", monospace;
+  margin-top: -190px;
+}
+#left .billinput p {
+  margin-bottom: 3px;
+  color: hsl(184, 14%, 56%);
+  font-size: 16px;
+}
+#left .billinput input {
+  width: 330px;
+  height: 28px;
+  font-family: "Space Mono", monospace;
+  font-size: 18px;
+  text-align-last: end;
+  font-weight: bolder;
+  color: hsl(183, 100%, 15%);
+  outline: none;
+  border-radius: 5px;
+  padding: 10px;
+  border: 2px solid hsl(172, 67%, 45%);
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+#dollar {
+  margin-top: -35px;
+  position: absolute;
+  margin-left: 10px;
+}
+.tipttl {
+  margin-bottom: 1px;
+  color: hsl(184, 14%, 56%);
+  font-family: "Space Mono", monospace;
+  margin-top: 48px;
+  font-size: 16px;
+}
+#selecttip {
+  display: grid;
+  grid-template-columns: 115px 115px auto;
+  margin-top: 5px;
+}
+#selecttip .tipamnt {
+  width: 80px;
+  border-radius: 6px;
+  margin-top: 17px;
+  height: 28px;
+  padding: 10px;
+  text-align: -webkit-center;
+  background-color: hsl(183, 100%, 15%);
+  color: white;
+  font-family: "Space Mono", monospace;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.active-tip {
+  background-color: hsl(172, 67%, 45%);
+}
+#selecttip .tipamnt:hover {
+  background-color: hsl(172, 67%, 45%);
+}
+.customtipamnt input {
+  width: 80px;
+  border-radius: 6px;
+  margin-top: 17px;
+  height: 28px;
+  padding: 10px;
+  text-align: -webkit-center;
+  color: hsl(183, 100%, 15%);
+  background-color: hsla(185, 94%, 87%, 0.573);
+  font-family: "Space Mono", monospace;
+  font-size: 20px;
+  cursor: text;
+  border: 2px solid hsl(185, 94%, 87%);
+  transition: 0.3s ease;
+  outline: none;
+}
+.customtipamnt input::placeholder {
+  color: hsla(183, 100%, 15%, 0.484);
+}
+.num-ppl {
+  margin-bottom: 1px;
+  color: hsl(184, 14%, 56%);
+  font-family: "Space Mono", monospace;
+  margin-top: 48px;
+  font-size: 20px;
+}
+
+#left .num-ppl {
+  margin-left: -7px;
+  font-family: "Space Mono", monospace;
+  margin-top: 68px;
+}
+#left .num-ppl p {
+  color: hsl(184, 14%, 56%);
+  font-size: 16px;
+  margin-top: -26px;
+}
+#left .num-ppl input {
+  padding: 10px;
+  width: 330px;
+  height: 30px;
+  font-family: "Space Mono", monospace;
+  font-size: 18px;
+  text-align-last: end;
+  font-weight: bolder;
+  color: hsl(183, 100%, 15%);
+  outline: none;
+  border: 2px solid hsl(172, 67%, 45%);
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+#user {
+  margin-top: -35px;
+  position: absolute;
+  margin-left: 10px;
+}
+
+#right {
+  height: 415px;
+  width: 400px;
+  background-color: hsl(183, 100%, 15%);
+  margin-left: 45px;
+  margin-top: 19px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+#tipamountsection {
+  margin-left: 30px;
+  margin-top: 40px;
+  display: flex;
+}
+#right h4 {
+  font-family: "Space Mono", monospace;
+  font-size: 17px;
+  color: white;
+}
+#right p {
+  font-family: "Space Mono", monospace;
+  font-size: 14px;
+  margin-top: -15px;
+  color: hsl(184, 14%, 56%);
+}
+#error {
+  margin-left: 211px;
+  margin-bottom: -36px;
+  color: red;
+  display: none;
+}
+#finaltipamount {
+  font-family: "Space Mono", monospace;
+  color: hsl(172, 67%, 45%);
+  margin-left: 60px;
+  font-size: 23px;
+  margin-top: -19px;
+}
+
+input [type="radio"] {
+  position: absolute;
+  appearance: none;
+}
+
+#totalamountsection {
+  margin-left: 30px;
+  margin-top: 40px;
+  display: flex;
+}
+#totalamount {
+  font-family: "Space Mono", monospace;
+  color: hsl(172, 67%, 45%);
+  margin-left: 98px;
+  font-size: 23px;
+  margin-top: -19px;
+}
+#reset {
+  font-family: "Space Mono", monospace;
+  width: 60%;
+  height: 35px;
+  align-items: center;
+  line-height: 0em;
+  font-size: 21px;
+  border: none;
+  width: 85%;
+  height: 45px;
+  margin-left: 34px;
+  margin-top: 35px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  color: white;
+  background-color: hsl(172, 67%, 45%);
+}
+#reset:hover {
+  background-color: hsl(0, 0%, 0%);
+}
+
+/*Media Query*/
+@media screen and (max-width: 480px) {
+  body {
+    background-color: hsl(185, 41%, 84%);
+  }
+  #logo {
+    margin-top: 45px;
+  }
+  #parent {
+    height: 52rem;
+    border-radius: 45px 45px 0px 0px;
+    margin-left: -3%;
+    margin-top: 6%;
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    width: 26rem;
+  }
+  #right h4 {
+    font-size: 16px;
+  }
+  #finaltipamount {
+    margin-left: 60px;
+    font-size: 17px;
+    margin-top: -8px;
+  }
+  #totalamount {
+    margin-left: 89px;
+    font-size: 17px;
+    margin-top: -7px;
+  }
+
+  #right {
+    width: 345px;
+    height: 285px;
+    margin-left: 32px;
+    margin-top: 25px;
+  }
+  #totalamountsection {
+    margin-top: 11px;
+  }
+  #reset {
+    margin-left: 27px;
+    margin-top: 25px;
+  }
+  #tipamountsection {
+    margin-top: 10px;
+  }
+  .attribution {
+    font-size: 12px;
+    margin-top: -26px;
+    margin-left: 14px;
+  }
+  #selecttip {
+    display: grid;
+    grid-template-columns: 211px 115px;
+  }
+
+  .customtipamnt input {
+    width: 146px;
+    height: 37px;
+  }
+
+  #selecttip .tipamnt {
+    width: 150px;
+    height: 37px;
+  }
+  #left .num-ppl {
+    margin-left: 5px;
+    margin-top: 58px;
+  }
+  #left .num-ppl p {
+    margin-bottom: 3px;
+    color: hsl(184, 14%, 56%);
+    font-size: 16px;
+    margin-top: -28px;
+  }
+}

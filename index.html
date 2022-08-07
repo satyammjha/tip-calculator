@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Tip calculator | @satyammjha</title>
+</head>
+
+<body>
+  <div id="logo"><img src="./images/logo.svg" alt=""></div>
+  <div id="parent">
+    <div id="left">
+      <div class="billinput">
+        <p>Bill</p><input id="pretotalbill" placeholder="00" type="number" min="1">
+      </div>
+      <span id="dollar"><img src="./images/icon-dollar.svg" alt=""></span>
+      <p class="tipttl">Select Tip %</p>
+      <div id="selecttip">
+        <span id="buttontest" class="tipamnt">5%</span>
+        <span class="tipamnt">10%</span>
+        <span class="tipamnt">15%</span>
+        <span class="tipamnt">25%</span>
+        <span class="tipamnt">50%</span>
+        <span class="customtipamnt"><input type="number" placeholder="Custom" id="customtipamntinput" min="1"></span>
+      </div>
+      <div class="num-ppl">
+        <p id="error">can't be zero</p>
+        <p>Number of People</p><input id="peoplecount" placeholder="01" type="number" min="1">
+      </div>
+      <span id="user"><img src="./images/icon-person.svg" alt=""></span>
+    </div>
+    <div id="right">
+      <div id="tipamountsection">
+        <span>
+          <h4>Tip Amount</h4>
+          <p>/ person</p>
+        </span>
+        <div id="finaltipamount">
+          <h1>$ 0.00</h1>
+        </div>
+      </div>
+      <div id="totalamountsection">
+        <span>
+          <h4>Total</h4>
+          <p>/ person</p>
+        </span>
+        <div id="totalamount">
+          <h1>$ 0.00</h1>
+        </div>
+      </div>
+      <button id="reset">Reset</button>
+    </div>
+  </div>
+  <div class="attribution">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend
+      Mentor</a>.Coded by <a href="#">satyammjha</a>.
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
