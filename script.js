@@ -124,4 +124,5 @@ function resetfunct() {
   totalamount.innerHTML = "$ 0.00";
   finaltipamount.innerHTML = "$ 0.00";
   error.style.display = "none";
+  tipbutton.style.backgroundColor = "red"
 }
