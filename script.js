@@ -1,4 +1,3 @@
-console.log("Satyam Jha");
 const pretotalbill = document.getElementById("pretotalbill");
 const totalamount = document.getElementById("totalamount");
 const peoplecount = document.getElementById("peoplecount");
@@ -20,32 +19,30 @@ function mainfunct() {
   } else if (customtipamntinput.value >= 1) {
     finaltipamount.innerHTML =
       ((customtipamntinput.value / 100) * pretotalbill.value) /
-      peoplecount.value
+      peoplecount.value;
     totalamount.innerHTML = parseFloat(
       pretotalbill.value / peoplecount.value +
         parseFloat(finaltipamount.innerHTML)
     ).toFixed(2);
-    finaltipamount.style.marginTop = "20px"
-    finaltipamount.style.fontSize = "30px" 
-    totalamount.style.marginTop = "20px"
-    totalamount.style.fontSize = "30px"
+    finaltipamount.style.marginTop = "20px";
+    finaltipamount.style.fontSize = "30px";
+    totalamount.style.marginTop = "20px";
+    totalamount.style.fontSize = "30px";
   } else if (customtipamntinput.value == 0) {
-    finaltipamount.value = ""
+    finaltipamount.value = "";
 
     if (peoplecount.value >= 1) {
-      error.style.display = "none"
-      customtipamntinput.value == "0"
+      error.style.display = "none";
+      customtipamntinput.value == "0";
       tipbutton.forEach((tipamnt) => {
         tipamnt.addEventListener("click", tipcalc);
       });
 
       function tipcalc(event) {
         tipbutton.forEach((tipamnt) => {
-          event.target.style.backgroundColor = "hsl(172, 67%, 45%)"
-          if (event.target.innerHTML !== tipamnt.innerHTML){
-            event.target.style.backgroundColor = "none"
+          tipamnt.style.backgroundColor = "hsl(183, 100%, 15%)";
+          event.target.style.backgroundColor = "hsl(172, 67%, 45%)";
 
-          }
           if (event.target.innerHTML == tipamnt.innerHTML) {
             customtipamntinput.value == "0";
 
@@ -93,7 +90,7 @@ function tipcalc(event) {
       if (customtipamntinput.value == 0) {
         if (peoplecount.value >= 1) {
           finaltipamount.innerHTML = buttontipfinal;
-          tipamnt.classList.add("active-tip");
+
           totalamount.innerHTML =
             (parseFloat(tipamnt.innerHTML) + parseFloat(pretotalbill.value)) /
             peoplecount.value;
